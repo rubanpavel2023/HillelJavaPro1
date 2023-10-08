@@ -22,7 +22,9 @@ public class Main {
         System.out.println(new StringBuilder("Total dogs: ").append(Dog.getDogCount()).toString());
         System.out.println(new StringBuilder("Total animals: ").append(Animals.getTotalAnimalCount()).toString());
 
-
+        System.out.println();
+        System.out.println(new StringBuilder("anagram/nagaram  Anagram? - ").append(Anagram.checkAnagram("anagram", "nagaram")).toString());
+        System.out.println(new StringBuilder("rat/car Anagram? - ").append(Anagram.checkAnagram("rat", "car")).toString());
 
     }
 }

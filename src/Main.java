@@ -1,3 +1,10 @@
+import Geometry.Circle;
+import Geometry.Rectangle;
+import Geometry.SumAreas;
+import Geometry.Triangle;
+import Polimorfism.*;
+
+
 public class Main {
     public static void main(String[] args) {
         System.out.println(Class1.greetings());
@@ -18,13 +25,34 @@ public class Main {
         Cat1.swim(1);
         System.out.println();
 
-        System.out.println(new StringBuilder("Total cats: ").append(Cat.getCatCount()).toString());
-        System.out.println(new StringBuilder("Total dogs: ").append(Dog.getDogCount()).toString());
-        System.out.println(new StringBuilder("Total animals: ").append(Animals.getTotalAnimalCount()).toString());
+        System.out.println("Total cats: " + Cat.getCatCount());
+        System.out.println("Total dogs: " + Dog.getDogCount());
+        System.out.println("Total animals: " + Animals.getTotalAnimalCount());
 
         System.out.println();
-        System.out.println(new StringBuilder("anagram/nagaram  Anagram? - ").append(Anagram.checkAnagram("anagram", "nagaram")).toString());
-        System.out.println(new StringBuilder("rat/car Anagram? - ").append(Anagram.checkAnagram("rat", "car")).toString());
+        System.out.println("anagram/nagaram  Anagram? - " + Anagram.checkAnagram("anagram", "nagaram"));
+        System.out.println("rat/car Anagram? - " + Anagram.checkAnagram("rat", "car"));
 
-    }
-}
+        System.out.println();
+//___________________________________________________________________________________________________
+       Competition.goOvercome();
+//____________________________________________________________________________________________________
+        System.out.println();
+        new Circle(2.5);
+        new Triangle(1.3,1.6,1.0);
+        new Rectangle(5.5,8.2);
+
+        SumAreas.sumAreasFigures();
+
+        /*Circle Circle_1 = new Circle(2.5);
+        System.out.println
+        (new StringBuilder("Area of a circle (m2): ").append(Circle_1.getAreaGeometricFigure()).toString());*/
+
+
+            }
+        }
+
+
+
+
+
